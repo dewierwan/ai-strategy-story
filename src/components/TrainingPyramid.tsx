@@ -7,70 +7,70 @@ const TrainingPyramid = () => {
       title: "AGI Strategy",
       icon: Shield,
       level3: [
-        { title: "Risk Assessment & Threat Modeling" },
-        { title: "Safety Research Methodologies" }, 
-        { title: "Coordination & International Cooperation" },
-        { title: "Policy Implementation Strategies" }
+        "Risk Assessment & Threat Modeling",
+        "Safety Research Methodologies", 
+        "Coordination & International Cooperation",
+        "Policy Implementation Strategies"
       ]
     },
     {
       title: "AGI Futures",
       icon: Globe,
       level3: [
-        { title: "Scenario Planning & Forecasting" },
-        { title: "Economic Impact Analysis" },
-        { title: "Social Transformation Studies" },
-        { title: "Long-term Governance Models" }
+        "Scenario Planning & Forecasting",
+        "Economic Impact Analysis",
+        "Social Transformation Studies",
+        "Long-term Governance Models"
       ]
     },
     {
       title: "AI Governance and Policy",
       icon: Settings,
       level3: [
-        { title: "Regulatory Framework Design" },
-        { title: "International AI Treaties" },
-        { title: "Corporate Governance Standards" },
-        { title: "Ethics & Compliance" }
+        "Regulatory Framework Design",
+        "International AI Treaties",
+        "Corporate Governance Standards",
+        "Ethics & Compliance"
       ]
     },
     {
       title: "AI Infrastructure",
       icon: Server,
       level3: [
-        { title: "Compute Security & Monitoring" },
-        { title: "Data Center Governance" },
-        { title: "Energy Systems for AI" },
-        { title: "Supply Chain Risk Management" }
+        "Compute Security & Monitoring",
+        "Data Center Governance",
+        "Energy Systems for AI",
+        "Supply Chain Risk Management"
       ]
     },
     {
       title: "AI Models",
       icon: Brain,
       level3: [
-        { title: "Interpretability Techniques" },
-        { title: "Safety Evaluations" },
-        { title: "Alignment Research" },
-        { title: "Control Mechanisms" }
+        "Interpretability Techniques",
+        "Safety Evaluations",
+        "Alignment Research",
+        "Control Mechanisms"
       ]
     },
     {
       title: "AI Misuse Defences",
       icon: Users,
       level3: [
-        { title: "CBRN Threat Detection" },
-        { title: "Critical Infrastructure Protection" },
-        { title: "Psychological Defense Systems" },
-        { title: "Information Security" }
+        "CBRN Threat Detection",
+        "Critical Infrastructure Protection",
+        "Psychological Defense Systems",
+        "Information Security"
       ]
     },
     {
       title: "Skills",
       icon: Wrench,
       level3: [
-        { title: "Machine Learning" },
-        { title: "Policy Writing" },
-        { title: "Technical Writing" },
-        { title: "Advocacy & Communication" }
+        "Machine Learning",
+        "Policy Writing",
+        "Technical Writing",
+        "Advocacy & Communication"
       ]
     }
   ];
@@ -141,7 +141,7 @@ const TrainingPyramid = () => {
                             </div>
                             <div className="flex-1 min-w-0">
                               <h5 className="text-sm font-semibold text-slate-700 group-hover:text-slate-900 leading-tight">
-                                {level3Course.title}
+                                {level3Course}
                               </h5>
                             </div>
                           </div>
