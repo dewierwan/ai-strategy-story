@@ -13,7 +13,7 @@ const JobsAndOrganisations = () => {
       iconBg: "bg-emerald-600"
     },
     {
-      title: "International bodies",
+      title: "International Bodies",
       description: "Building governance and standards",
       examples: "e.g. UN, OECD, GPAI, IAEA-style proposals",
       icon: Globe,
@@ -22,7 +22,7 @@ const JobsAndOrganisations = () => {
       iconBg: "bg-blue-600"
     },
     {
-      title: "AI companies",
+      title: "AI Companies",
       description: "Researching alignment, building evals, improving security",
       examples: "e.g. Anthropic, DeepMind, OpenAI, Mistral",
       icon: Building2,
@@ -31,7 +31,7 @@ const JobsAndOrganisations = () => {
       iconBg: "bg-purple-600"
     },
     {
-      title: "Nonprofits and think tanks",
+      title: "Nonprofits and Think Tanks",
       description: "Developing strategy and interventions",
       examples: "e.g. GovAI, Rethink Priorities, RAND, Convergence",
       icon: Users,
@@ -40,7 +40,7 @@ const JobsAndOrganisations = () => {
       iconBg: "bg-orange-600"
     },
     {
-      title: "Research institutes",
+      title: "Research Institutes",
       description: "Doing foundational technical work",
       examples: "e.g. Redwood, Apollo Research, AISI, METR, ARC, FAR",
       icon: Search,
@@ -49,7 +49,7 @@ const JobsAndOrganisations = () => {
       iconBg: "bg-teal-600"
     },
     {
-      title: "Fellowships and training programmes",
+      title: "Fellowships and Training Programmes",
       description: "Launching careers and collaborations",
       examples: "e.g. BlueDot, SERI MATS, ISF, Century Fellowship",
       icon: BookOpen,
@@ -64,7 +64,7 @@ const JobsAndOrganisations = () => {
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-slate-900 mb-6">
-            Jobs and organisations
+            Jobs and Organisations
           </h2>
           <p className="text-xl text-slate-600 max-w-3xl mx-auto">
             Work on AI safety is growing fast. You can contribute by joining or collaborating with:

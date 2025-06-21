@@ -4,73 +4,73 @@ import { BookOpen, Target, Lightbulb, Shield, Globe, Settings, Server, Brain, Us
 const TrainingPyramid = () => {
   const level2Courses = [
     {
-      title: "AGI Safety Strategy",
+      title: "AGI Strategy",
       icon: Shield,
       level3: [
-        "Risk Assessment & Threat Modeling",
-        "Safety Research Methodologies", 
-        "Coordination & International Cooperation",
-        "Policy Implementation Strategies"
+        { title: "Risk Assessment & Threat Modeling" },
+        { title: "Safety Research Methodologies" }, 
+        { title: "Coordination & International Cooperation" },
+        { title: "Policy Implementation Strategies" }
       ]
     },
     {
       title: "AGI Futures",
       icon: Globe,
       level3: [
-        "Scenario Planning & Forecasting",
-        "Economic Impact Analysis",
-        "Social Transformation Studies",
-        "Long-term Governance Models"
+        { title: "Scenario Planning & Forecasting" },
+        { title: "Economic Impact Analysis" },
+        { title: "Social Transformation Studies" },
+        { title: "Long-term Governance Models" }
       ]
     },
     {
       title: "AI Governance and Policy",
       icon: Settings,
       level3: [
-        "Regulatory Framework Design",
-        "International AI Treaties",
-        "Corporate Governance Standards",
-        "Ethics & Compliance"
+        { title: "Regulatory Framework Design" },
+        { title: "International AI Treaties" },
+        { title: "Corporate Governance Standards" },
+        { title: "Ethics & Compliance" }
       ]
     },
     {
       title: "AI Infrastructure",
       icon: Server,
       level3: [
-        "Compute Security & Monitoring",
-        "Data Center Governance",
-        "Energy Systems for AI",
-        "Supply Chain Risk Management"
+        { title: "Compute Security & Monitoring" },
+        { title: "Data Center Governance" },
+        { title: "Energy Systems for AI" },
+        { title: "Supply Chain Risk Management" }
       ]
     },
     {
       title: "AI Models",
       icon: Brain,
       level3: [
-        "Interpretability Techniques",
-        "Safety Evaluations",
-        "Alignment Research",
-        "Control Mechanisms"
+        { title: "Interpretability Techniques" },
+        { title: "Safety Evaluations" },
+        { title: "Alignment Research" },
+        { title: "Control Mechanisms" }
       ]
     },
     {
       title: "AI Misuse Defences",
       icon: Users,
       level3: [
-        "CBRN Threat Detection",
-        "Critical Infrastructure Protection",
-        "Psychological Defense Systems",
-        "Information Security"
+        { title: "CBRN Threat Detection" },
+        { title: "Critical Infrastructure Protection" },
+        { title: "Psychological Defense Systems" },
+        { title: "Information Security" }
       ]
     },
     {
       title: "Skills",
       icon: Wrench,
       level3: [
-        "Machine Learning",
-        "Policy Writing",
-        "Technical Writing",
-        "Advocacy & Communication"
+        { title: "Machine Learning" },
+        { title: "Policy Writing" },
+        { title: "Technical Writing" },
+        { title: "Advocacy & Communication" }
       ]
     }
   ];
@@ -106,33 +106,42 @@ const TrainingPyramid = () => {
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
               {level2Courses.map((course, index) => (
-                <div key={index} className="bg-white rounded-xl p-6 border-2 border-slate-200 hover:border-blue-300 transition-all duration-200 shadow-sm hover:shadow-md">
+                <div key={index} className="space-y-6">
                   {/* Level 2 Course */}
-                  <div className="text-center mb-6">
-                    <div className="bg-gradient-to-r from-blue-100 to-indigo-100 p-4 rounded-lg inline-flex mb-4">
-                      <course.icon className="w-8 h-8 text-blue-600" />
+                  <div className="bg-white rounded-xl p-6 border-2 border-slate-200 hover:border-blue-300 transition-all duration-200 shadow-sm hover:shadow-md">
+                    <div className="text-center">
+                      <div className="bg-gradient-to-r from-blue-100 to-indigo-100 p-4 rounded-lg inline-flex mb-4">
+                        <course.icon className="w-8 h-8 text-blue-600" />
+                      </div>
+                      <h4 className="font-bold text-slate-900 text-lg mb-2">{course.title}</h4>
+                      <span className="inline-block bg-blue-100 text-blue-800 text-xs font-semibold px-3 py-1 rounded-full">
+                        Level 2 Course
+                      </span>
                     </div>
-                    <h4 className="font-bold text-slate-900 text-lg mb-2">{course.title}</h4>
-                    <span className="inline-block bg-blue-100 text-blue-800 text-xs font-semibold px-3 py-1 rounded-full">
-                      Level 2 Course
-                    </span>
                   </div>
-
-                  {/* Divider */}
-                  <div className="border-t border-slate-200 mb-4"></div>
 
                   {/* Level 3 Specializations */}
                   <div>
-                    <div className="text-center mb-3">
+                    <div className="text-center mb-4">
                       <span className="inline-block bg-indigo-100 text-indigo-800 text-xs font-semibold px-3 py-1 rounded-full">
                         Level 3 Courses
                       </span>
                     </div>
-                    <div className="space-y-2">
+                    <div className="space-y-3">
                       {course.level3.map((level3Course, level3Index) => (
-                        <div key={level3Index} className="flex items-start gap-2 p-2 rounded-lg hover:bg-slate-50 transition-colors">
-                          <span className="text-slate-400 text-sm mt-1">↳</span>
-                          <span className="text-sm text-slate-600 leading-relaxed">{level3Course}</span>
+                        <div key={level3Index} className="group relative bg-gradient-to-r from-slate-50 to-blue-50 hover:from-blue-50 hover:to-indigo-50 border border-slate-200 hover:border-blue-300 rounded-lg p-3 transition-all duration-200 cursor-pointer hover:shadow-sm">
+                          <div className="flex items-center gap-3">
+                            <div className="flex-shrink-0">
+                              <div className="w-6 h-6 bg-gradient-to-r from-blue-500 to-indigo-500 rounded-full flex items-center justify-center">
+                                <span className="text-white text-xs font-bold">{level3Index + 1}</span>
+                              </div>
+                            </div>
+                            <div className="flex-1 min-w-0">
+                              <h5 className="text-sm font-semibold text-slate-700 group-hover:text-slate-900 leading-tight">
+                                {level3Course.title}
+                              </h5>
+                            </div>
+                          </div>
                         </div>
                       ))}
                     </div>
@@ -144,9 +153,14 @@ const TrainingPyramid = () => {
         </div>
 
         <div className="text-center mt-12">
-          <button className="bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-700 hover:to-indigo-700 text-white px-8 py-4 rounded-lg font-semibold text-lg transition-all duration-200 shadow-lg hover:shadow-xl transform hover:-translate-y-1">
+          <a 
+            href="https://bluedot.org/courses/future-of-ai"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-700 hover:to-indigo-700 text-white px-8 py-4 rounded-lg font-semibold text-lg transition-all duration-200 shadow-lg hover:shadow-xl transform hover:-translate-y-1 inline-block"
+          >
             Start Your Journey
-          </button>
+          </a>
         </div>
       </div>
     </section>
