@@ -1,22 +1,14 @@
-# Welcome to your Lovable project
+# Welcome to your project
 
 ## Project info
-
-**URL**: https://lovable.dev/projects/07e62a27-816a-491b-985f-0f233a3dcbac
 
 ## How can I edit this code?
 
 There are several ways of editing your application.
 
-**Use Lovable**
-
-Simply visit the [Lovable Project](https://lovable.dev/projects/07e62a27-816a-491b-985f-0f233a3dcbac) and start prompting.
-
-Changes made via Lovable will be committed automatically to this repo.
-
 **Use your preferred IDE**
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected.
 
 The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
 
@@ -62,12 +54,58 @@ This project is built with:
 
 ## How can I deploy this project?
 
-Simply open [Lovable](https://lovable.dev/projects/07e62a27-816a-491b-985f-0f233a3dcbac) and click on Share -> Publish.
+This project is configured for GitHub Pages deployment with automatic CI/CD via GitHub Actions.
 
-## Can I connect a custom domain to my Lovable project?
+**Live Site**: https://dewierwan.github.io/ai-strategy-story/
 
-Yes, you can!
+## 📦 Tech Stack
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+- **Frontend**: React 18 + TypeScript
+- **Build Tool**: Vite
+- **UI Components**: shadcn/ui with Radix UI primitives
+- **Styling**: TailwindCSS
+- **Routing**: React Router
+- **Data Fetching**: TanStack Query
+- **Icons**: Lucide React
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+## 🚀 Deployment Guide
+
+See [DEPLOYMENT.md](./DEPLOYMENT.md) for detailed deployment instructions.
+
+## 🔗 Custom Domain
+
+You can configure a custom domain for your GitHub Pages site by:
+1. Adding a `CNAME` file to the `public/` directory with your domain name
+2. Configuring DNS records to point to GitHub Pages
+3. Enabling custom domain in your repository's Pages settings
+
+Read more: [GitHub Pages Custom Domain Guide](https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site)
+
+## 🛠️ Development
+
+### Prerequisites
+- Node.js 18 or higher
+- npm
+
+### Setup
+```bash
+# Clone the repository
+git clone [your-repo-url]
+cd ai-strategy-story
+
+# Install dependencies
+npm install
+
+# Start development server
+npm run dev
+```
+
+The development server will be available at: `http://localhost:8080/ai-strategy-story/` 
+(or the next available port if 8080 is in use)
+
+### Available Scripts
+- `npm run dev` - Start development server
+- `npm run build` - Build for production
+- `npm run preview` - Preview production build locally
+- `npm run deploy` - Manual deployment to GitHub Pages
+- `npm run lint` - Run ESLint
