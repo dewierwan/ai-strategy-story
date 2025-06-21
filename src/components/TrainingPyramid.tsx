@@ -4,7 +4,7 @@ import { BookOpen, Target, Lightbulb, Shield, Globe, Settings, Server, Brain, Us
 const TrainingPyramid = () => {
   const level2Courses = [
     {
-      title: "AGI safety strategy",
+      title: "AGI Safety Strategy",
       icon: Shield,
       level3: [
         "Risk Assessment & Threat Modeling",
@@ -14,7 +14,7 @@ const TrainingPyramid = () => {
       ]
     },
     {
-      title: "AGI futures",
+      title: "AGI Futures",
       icon: Globe,
       level3: [
         "Scenario Planning & Forecasting",
@@ -24,7 +24,7 @@ const TrainingPyramid = () => {
       ]
     },
     {
-      title: "AI governance and policy",
+      title: "AI Governance and Policy",
       icon: Settings,
       level3: [
         "Regulatory Framework Design",
@@ -34,7 +34,7 @@ const TrainingPyramid = () => {
       ]
     },
     {
-      title: "AI infrastructure",
+      title: "AI Infrastructure",
       icon: Server,
       level3: [
         "Compute Security & Monitoring",
@@ -44,7 +44,7 @@ const TrainingPyramid = () => {
       ]
     },
     {
-      title: "AI models",
+      title: "AI Models",
       icon: Brain,
       level3: [
         "Interpretability Techniques",
@@ -54,7 +54,7 @@ const TrainingPyramid = () => {
       ]
     },
     {
-      title: "AI misuse defences",
+      title: "AI Misuse Defences",
       icon: Users,
       level3: [
         "CBRN Threat Detection",
@@ -92,9 +92,9 @@ const TrainingPyramid = () => {
           <div className="flex justify-center">
             <div className="bg-gradient-to-r from-blue-600 to-indigo-600 rounded-2xl p-8 text-center text-white shadow-lg max-w-md w-full">
               <BookOpen className="w-12 h-12 mx-auto mb-4" />
-              <h3 className="text-2xl font-bold mb-2">Level 1</h3>
-              <p className="text-xl font-semibold">Future of AI Course</p>
-              <p className="text-blue-100 mt-2">Foundation knowledge for everyone</p>
+              <h3 className="text-2xl font-bold mb-2">Future of AI Course</h3>
+              <p className="text-xl font-semibold">Foundation knowledge for everyone</p>
+              <p className="text-blue-100 mt-2">Level 1 Course</p>
             </div>
           </div>
 
@@ -123,10 +123,11 @@ const TrainingPyramid = () => {
 
                   {/* Level 3 Specializations */}
                   <div>
-                    <h5 className="text-sm font-semibold text-slate-700 mb-3 flex items-center gap-2">
-                      <Target className="w-4 h-4" />
-                      Level 3 deep dive courses:
-                    </h5>
+                    <div className="text-center mb-3">
+                      <span className="inline-block bg-indigo-100 text-indigo-800 text-xs font-semibold px-3 py-1 rounded-full">
+                        Level 3 Courses
+                      </span>
+                    </div>
                     <div className="space-y-2">
                       {course.level3.map((level3Course, level3Index) => (
                         <div key={level3Index} className="flex items-start gap-2 p-2 rounded-lg hover:bg-slate-50 transition-colors">
