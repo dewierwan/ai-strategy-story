@@ -98,48 +98,43 @@ const TrainingPyramid = () => {
             </div>
           </div>
 
-          {/* Level 2 */}
+          {/* Level 2 & 3 Merged */}
           <div>
             <div className="text-center mb-8">
-              <h3 className="text-2xl font-bold text-slate-900 mb-2">Level 2</h3>
-              <p className="text-slate-600">Specialized domain knowledge</p>
+              <h3 className="text-2xl font-bold text-slate-900 mb-2">Advanced courses</h3>
+              <p className="text-slate-600">Domain courses with optional advanced tracks</p>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
               {level2Courses.map((course, index) => (
-                <div key={index} className="bg-white rounded-xl p-6 border-2 border-slate-200 hover:border-blue-300 transition-all duration-200 shadow-sm hover:shadow-md text-center">
-                  <div className="bg-slate-100 p-3 rounded-lg inline-flex mb-4">
-                    <course.icon className="w-6 h-6 text-slate-600" />
-                  </div>
-                  <h4 className="font-bold text-slate-900 mb-2">{course.title}</h4>
-                </div>
-              ))}
-            </div>
-          </div>
-
-          {/* Level 3 */}
-          <div>
-            <div className="text-center mb-8">
-              <h3 className="text-2xl font-bold text-slate-900 mb-2">Level 3</h3>
-              <p className="text-slate-600">Specialized expertise and practical skills</p>
-            </div>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
-              {level2Courses.map((course, index) => (
-                <div key={index} className="space-y-4">
-                  <div className="text-center">
-                    <div className="bg-gradient-to-r from-slate-100 to-slate-200 rounded-lg p-3 inline-flex mb-2">
-                      <course.icon className="w-5 h-5 text-slate-600" />
+                <div key={index} className="bg-white rounded-xl p-6 border-2 border-slate-200 hover:border-blue-300 transition-all duration-200 shadow-sm hover:shadow-md">
+                  {/* Level 2 Course */}
+                  <div className="text-center mb-6">
+                    <div className="bg-gradient-to-r from-blue-100 to-indigo-100 p-4 rounded-lg inline-flex mb-4">
+                      <course.icon className="w-8 h-8 text-blue-600" />
                     </div>
-                    <h4 className="font-semibold text-slate-900 text-sm">{course.title}</h4>
+                    <h4 className="font-bold text-slate-900 text-lg mb-2">{course.title}</h4>
+                    <span className="inline-block bg-blue-100 text-blue-800 text-xs font-semibold px-3 py-1 rounded-full">
+                      Level 2 Course
+                    </span>
                   </div>
-                  <div className="space-y-2">
-                    {course.level3.map((level3Course, level3Index) => (
-                      <div key={level3Index} className="bg-slate-50 rounded-lg p-3 border border-slate-200 hover:border-slate-300 transition-colors">
-                        <div className="flex items-start gap-2">
-                          <Lightbulb className="w-4 h-4 text-slate-500 mt-0.5 flex-shrink-0" />
-                          <span className="text-sm text-slate-700 leading-tight">{level3Course}</span>
+
+                  {/* Divider */}
+                  <div className="border-t border-slate-200 mb-4"></div>
+
+                  {/* Level 3 Specializations */}
+                  <div>
+                    <h5 className="text-sm font-semibold text-slate-700 mb-3 flex items-center gap-2">
+                      <Target className="w-4 h-4" />
+                      Level 3 deep dive courses:
+                    </h5>
+                    <div className="space-y-2">
+                      {course.level3.map((level3Course, level3Index) => (
+                        <div key={level3Index} className="flex items-start gap-2 p-2 rounded-lg hover:bg-slate-50 transition-colors">
+                          <span className="text-slate-400 text-sm mt-1">↳</span>
+                          <span className="text-sm text-slate-600 leading-relaxed">{level3Course}</span>
                         </div>
-                      </div>
-                    ))}
+                      ))}
+                    </div>
                   </div>
                 </div>
               ))}

@@ -4,7 +4,8 @@ import path from "path";
 
 // https://vitejs.dev/config/
 export default defineConfig(({ mode }) => ({
-  base: '/ai-strategy-story/',
+  // Remove base path for local development
+  // base: '/ai-strategy-story/',
   server: {
     host: "::",
     port: 8080,
