@@ -90,7 +90,10 @@ const TrainingPyramid = () => {
         <div className="space-y-12">
           {/* Level 1 */}
           <div className="flex justify-center">
-            <div className="bg-gradient-to-r from-blue-600 to-indigo-600 rounded-2xl p-8 text-center text-white shadow-lg max-w-md w-full">
+            <div 
+              className="bg-gradient-to-r from-blue-600 to-indigo-600 rounded-2xl p-8 text-center text-white shadow-lg max-w-md w-full cursor-pointer hover:from-blue-700 hover:to-indigo-700 transition-all duration-200 transform hover:-translate-y-1 hover:shadow-xl"
+              onClick={() => window.open('https://bluedot.org/courses/future-of-ai', '_blank', 'noopener,noreferrer')}
+            >
               <BookOpen className="w-12 h-12 mx-auto mb-4" />
               <h3 className="text-2xl font-bold mb-2">Future of AI Course</h3>
               <p className="text-xl font-semibold">Foundation knowledge for everyone</p>
