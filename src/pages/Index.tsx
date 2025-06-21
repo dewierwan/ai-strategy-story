@@ -1,9 +1,9 @@
-
 import React from 'react';
 import { AlertTriangle, Shield, Users, Zap, Globe, BookOpen } from 'lucide-react';
 import Hero from '../components/Hero';
 import WhyThisMatters from '../components/WhyThisMatters';
 import WhatWeMustDo from '../components/WhatWeMustDo';
+import JobsAndOrganisations from '../components/JobsAndOrganisations';
 import PossibleFutures from '../components/PossibleFutures';
 import TrainingPyramid from '../components/TrainingPyramid';
 
@@ -13,8 +13,9 @@ const Index = () => {
       <Hero />
       <WhyThisMatters />
       <WhatWeMustDo />
-      <PossibleFutures />
       <TrainingPyramid />
+      <JobsAndOrganisations />
+      <PossibleFutures />
     </div>
   );
 };
