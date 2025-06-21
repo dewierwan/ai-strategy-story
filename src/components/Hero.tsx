@@ -1,8 +1,14 @@
-
 import React from 'react';
 import { AlertTriangle, ArrowDown } from 'lucide-react';
 
 const Hero = () => {
+  const handleLearnMore = () => {
+    window.scrollTo({
+      top: window.innerHeight,
+      behavior: 'smooth'
+    });
+  };
+
   return (
     <section className="min-h-screen flex items-center justify-center relative px-6">
       <div className="max-w-4xl mx-auto text-center">
@@ -19,11 +25,11 @@ const Hero = () => {
           Understanding the threats, building the solutions, and shaping the future of artificial general intelligence for humanity's benefit.
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
-          <button className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded-lg font-semibold text-lg transition-all duration-200 shadow-lg hover:shadow-xl transform hover:-translate-y-1">
-            Explore Solutions
-          </button>
-          <button className="border-2 border-slate-300 hover:border-slate-400 text-slate-700 px-8 py-4 rounded-lg font-semibold text-lg transition-all duration-200 hover:bg-slate-50">
-            Learn More
+          <button 
+            onClick={handleLearnMore}
+            className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded-lg font-semibold text-lg transition-all duration-200 shadow-lg hover:shadow-xl transform hover:-translate-y-1"
+          >
+            Learn more
           </button>
         </div>
       </div>
