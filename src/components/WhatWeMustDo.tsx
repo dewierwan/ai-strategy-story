@@ -1,6 +1,5 @@
-
 import React from 'react';
-import { Shield, Search, Lock, Users, Globe } from 'lucide-react';
+import { Shield, Search, Lock, Users, Globe, Sparkles } from 'lucide-react';
 
 const WhatWeMustDo = () => {
   const actions = [
@@ -68,6 +67,19 @@ const WhatWeMustDo = () => {
       color: "from-teal-50 to-cyan-50",
       borderColor: "border-teal-100",
       iconBg: "bg-teal-600"
+    },
+    {
+      title: "Thrive in the age of AGI",
+      icon: Sparkles,
+      items: [
+        "Building a future where humanity flourishes alongside artificial general intelligence",
+        "Maximizing human potential and wellbeing",
+        "Preserving human agency and purpose",
+        "Creating abundant opportunities for growth"
+      ],
+      color: "from-yellow-50 to-amber-50",
+      borderColor: "border-yellow-100",
+      iconBg: "bg-yellow-600"
     }
   ];
 
@@ -102,13 +114,6 @@ const WhatWeMustDo = () => {
               </ul>
             </div>
           ))}
-          
-          <div className="bg-gradient-to-br from-yellow-50 to-amber-50 rounded-2xl p-6 border border-yellow-100 flex items-center justify-center">
-            <div className="text-center">
-              <h3 className="text-2xl font-bold text-slate-900 mb-4">Thrive in the age of AGI</h3>
-              <p className="text-slate-600">Building a future where humanity flourishes alongside artificial general intelligence.</p>
-            </div>
-          </div>
         </div>
       </div>
     </section>
