@@ -5,7 +5,7 @@ import path from "path";
 // https://vitejs.dev/config/
 export default defineConfig(({ mode }) => ({
   // Set base path for GitHub Pages deployment
-  base: mode === 'development' ? '/ai-strategy-story/' : '/ai-strategy-story/',
+  base: '/ai-strategy-story/',
   server: {
     host: "::",
     port: 8080,
