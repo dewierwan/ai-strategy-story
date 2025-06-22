@@ -3,15 +3,14 @@ import { TrendingUp, AlertTriangle } from 'lucide-react';
 
 const WhyThisMatters = () => {
   const trends = [
-    "Timeline to AGI: Leading AI companies and prediction markets converge on AGI arriving by 2027-2035",
-    "Accelerating AI race: US tech giants invest $200B+ annually whilst competing with China, prioritising speed over safety",
-    "Declining international order: Weakening global cooperation undermines our ability to govern AI"
+    "AI development and timelines",
+    "Geopolitical and commercial arms race"
   ];
 
   const threats = [
-    "Human/AI takeover: Malevolent actors could use superintelligence to seize unprecedented power, ending democracy",
-    "Catastrophic terrorism: AI democratises weapons creation—from engineered pandemics to infrastructure attacks",
-    "Great power conflict: AI arms race risks triggering aggression between nations and reducing de-escalation windows"
+    "Human/AI takeover",
+    "Catastrophic terrorism",
+    "Great power conflict"
   ];
 
   return (
