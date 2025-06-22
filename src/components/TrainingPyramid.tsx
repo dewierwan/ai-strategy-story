@@ -30,7 +30,6 @@ const TrainingPyramid = () => {
         "Regulatory Framework Design",
         "International AI Treaties",
         "Corporate Governance Standards",
-        "Ethics & Compliance"
       ]
     },
     {
@@ -39,8 +38,7 @@ const TrainingPyramid = () => {
       level3: [
         "Compute Security & Monitoring",
         "Data Center Governance",
-        "Energy Systems for AI",
-        "Supply Chain Risk Management"
+        "Training Data"
       ]
     },
     {
