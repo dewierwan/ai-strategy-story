@@ -8,9 +8,9 @@ const TrainingPyramid = () => {
       icon: Shield,
       level3: [
         "Geopolitics of AGI",
-        "AI capability forecasting and early warning",
-        "Leadership skills",
-        "The big questions"
+        "AI Capability Forecasting and Early Warning",
+        "Leadership Skills",
+        "The Big Questions"
       ]
     },
     {
@@ -18,9 +18,9 @@ const TrainingPyramid = () => {
       icon: Globe,
       level3: [
         "Managing the AGI transition",
-        "Reimagining governance and the social contract",
-        "Post-AGI economics and wealth distribution",
-        "Pursuing human flourishing"
+        "Reimagining Governance and the Social Contract",
+        "Post-AGI Economics and Wealth Distribution",
+        "Pursuing Human Flourishing"
       ]
     },
     {
@@ -29,13 +29,10 @@ const TrainingPyramid = () => {
       level3: [
         "International AI governance",
         "National AI governance",
-        "Compute governance",
         "Corporate governance",
-        "Incident response and whistleblower systems",
         "Crisis response",
         "Risk communications",
-        "Advocacy skills",
-        "Public/policy/political engagement skills"
+        "Advocacy skills"
       ]
     },
     {
@@ -43,30 +40,30 @@ const TrainingPyramid = () => {
       icon: Server,
       level3: [
         "Model Parameter Security",
-        "Training data filtering"
+        "Training Data Filtering"
       ]
     },
     {
       title: "AI Systems",
       icon: Brain,
       level3: [
-        "AI interpretability",
-        "AI evaluations and red-teaming",
+        "AI Interpretability",
+        "AI Evaluations and Red-Teaming",
         "AI Alignment",
         "AI Control",
         "AI Robustness and Jailbreak Defence",
-        "Safe by design AI models",
-        "Machine Learning"
+        "Safe by Design AI Models",
+        "Machine Learning skills"
       ]
     },
     {
       title: "AI Misuse Defences",
       icon: Users,
       level3: [
-        "Biodefence and pandemic preparedness",
-        "Cybersecurity for critical national infrastructure",
-        "Cognitive security",
-        "Political Security: Hardening democracy from AI takeover"
+        "Biodefence and Pandemic Preparedness",
+        "Cybersecurity for Critical National Infrastructure",
+        "Cognitive Security",
+        "Political Security: Hardening Democracy from AI Takeover"
       ]
     }
   ];

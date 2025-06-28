@@ -23,11 +23,11 @@ const WhatWeMustDo = () => {
       description: "Build the technical and institutional infrastructure to identify dangerous AI capabilities before they cause harm. This includes developing evaluation methods, interpretability tools, and early warning systems to understand what AI systems can do and communicate risks to decision-makers.",
       icon: Search,
       courses: [
-        "AI interpretability",
-        "AI evaluations and red-teaming",
-        "Risk communications",
-        "Compute governance",
-        "Incident response and whistleblower systems"
+        "AI Interpretability",
+        "AI Evaluations and Red-Teaming",
+        "Risk Communications",
+        "Compute Governance",
+        "Incident Response and Whistleblower Systems"
       ],
       color: "from-blue-50 to-indigo-50",
       borderColor: "border-blue-100",
@@ -38,10 +38,10 @@ const WhatWeMustDo = () => {
       description: "Create multiple layers of protection to ensure AI systems cannot cause catastrophic harm, even if they're misaligned or compromised. This last line of defense includes alignment techniques, control mechanisms, security measures, and robustness against misuse.",
       icon: Lock,
       courses: [
-        "AI alignment",
-        "AI control",
-        "Model parameter security",
-        "AI robustness and jailbreak defence"
+        "AI Alignment",
+        "AI Control",
+        "Model Parameter Security",
+        "AI Robustness and Jailbreak Defence"
       ],
       color: "from-purple-50 to-violet-50",
       borderColor: "border-purple-100",
@@ -52,11 +52,11 @@ const WhatWeMustDo = () => {
       description: "Prepare society to survive and recover from AI-enabled attacks by building resilient defenses across all domains. This includes protecting against engineered pandemics, securing critical infrastructure from cyberattacks, defending democratic institutions from manipulation, and developing crisis response capabilities.",
       icon: Users,
       courses: [
-        "Biodefence and pandemic preparedness",
-        "Cybersecurity for critical national infrastructure",
-        "Cognitive security",
-        "Political Security: Hardening democracy from AI takeover",
-        "Crisis response"
+        "Biodefence and Pandemic Preparedness",
+        "Cybersecurity for Critical National Infrastructure",
+        "Cognitive Security",
+        "Political Security: Hardening Democracy from AI Takeover",
+        "Crisis Response"
       ],
       color: "from-orange-50 to-amber-50",
       borderColor: "border-orange-100",
@@ -67,10 +67,10 @@ const WhatWeMustDo = () => {
       description: "Navigate the profound societal transformation that AGI will bring while ensuring humanity flourishes. This involves reimagining economics and governance for a post-work world, preventing power concentration, and helping humanity find meaning and purpose when AI surpasses human capabilities.",
       icon: Globe,
       courses: [
-        "Managing the AGI transition",
-        "Reimagining governance and the social contract",
-        "Post-AGI economics and wealth distribution",
-        "Pursuing human flourishing"
+        "Managing the AGI Transition",
+        "Reimagining Governance and the Social Contract",
+        "Post-AGI Economics and Wealth Distribution",
+        "Pursuing Human Flourishing"
       ],
       color: "from-teal-50 to-cyan-50",
       borderColor: "border-teal-100",
