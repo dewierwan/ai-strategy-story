@@ -5,7 +5,7 @@ const WhatWeMustDo = () => {
   const actions = [
     {
       title: "Prevent the training of dangerous AI models",
-      description: "Prevent AI systems which threaten human civilisation from being built in the first place through compute controls, governance frameworks, and international cooperation. This defensive line focuses on tracking AI development globally, setting safety standards, and ensuring only beneficial AI systems are trained.",
+      description: "Stop civilization-threatening AI systems before they're built through compute controls, safety standards, and international cooperation.",
       icon: Shield,
       courses: [
         "International AI governance",
@@ -20,7 +20,7 @@ const WhatWeMustDo = () => {
     },
     {
       title: "Detect dangerous AI capabilities and actions",
-      description: "Build the technical and institutional infrastructure to identify dangerous AI capabilities before they cause harm. This includes developing evaluation methods, interpretability tools, and early warning systems to understand what AI systems can do and communicate risks to decision-makers.",
+      description: "Build evaluation methods and early warning systems to identify dangerous AI capabilities before they cause harm.",
       icon: Search,
       courses: [
         "AI Interpretability",
@@ -35,7 +35,7 @@ const WhatWeMustDo = () => {
     },
     {
       title: "Constrain dangerous AI actions",
-      description: "Create multiple layers of protection to ensure AI systems cannot cause catastrophic harm, even if they're misaligned or compromised. This last line of defense includes alignment techniques, control mechanisms, security measures, and robustness against misuse.",
+      description: "Ensure AI systems cannot cause catastrophic harm through alignment techniques, control mechanisms, and security measures.",
       icon: Lock,
       courses: [
         "AI Alignment",
@@ -49,7 +49,7 @@ const WhatWeMustDo = () => {
     },
     {
       title: "Withstand dangerous AI actions",
-      description: "Prepare society to survive and recover from AI-enabled attacks by building resilient defenses across all domains. This includes protecting against engineered pandemics, securing critical infrastructure from cyberattacks, defending democratic institutions from manipulation, and developing crisis response capabilities.",
+      description: "Build resilient defenses across all domains—from pandemic preparedness to cybersecurity—to survive AI-enabled attacks.",
       icon: Users,
       courses: [
         "Biodefence and Pandemic Preparedness",
@@ -64,7 +64,7 @@ const WhatWeMustDo = () => {
     },
     {
       title: "Adapt and thrive in the age of AGI",
-      description: "Navigate the profound societal transformation that AGI will bring while ensuring humanity flourishes. This involves reimagining economics and governance for a post-work world, preventing power concentration, and helping humanity find meaning and purpose when AI surpasses human capabilities.",
+      description: "Navigate humanity's transformation in a post-AGI world, ensuring prosperity and purpose when AI surpasses human capabilities.",
       icon: Globe,
       courses: [
         "Managing the AGI Transition",

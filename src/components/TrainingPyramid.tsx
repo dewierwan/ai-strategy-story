@@ -4,31 +4,26 @@ import { BookOpen, Target, Lightbulb, Shield, Globe, Settings, Server, Brain, Us
 const TrainingPyramid = () => {
   const level2Courses = [
     {
-      title: "AGI Strategy",
+      title: "AGI Strategy and Futures",
+      description: "For strategists, entrepreneurs, and systems thinkers",
       icon: Shield,
       level3: [
         "Geopolitics of AGI",
-        "AI Capability Forecasting and Early Warning",
-        "Leadership Skills",
-        "The Big Questions"
-      ]
-    },
-    {
-      title: "AGI Futures",
-      icon: Globe,
-      level3: [
+        "AI capability forecasting and early warning",
         "Managing the AGI transition",
-        "Reimagining Governance and the Social Contract",
-        "Post-AGI Economics and Wealth Distribution",
-        "Pursuing Human Flourishing"
+        "Reimagining governance and the social contract",
+        "Post-AGI economics and wealth distribution",
+        "Pursuing human flourishing"
       ]
     },
     {
-      title: "AI Governance and Policy",
+      title: "AI Governance",
+      description: "For policymakers, civil servants, and institutional leaders",
       icon: Settings,
       level3: [
         "International AI governance",
         "National AI governance",
+        "Compute governance",
         "Corporate governance",
         "Crisis response",
         "Risk communications",
@@ -36,34 +31,30 @@ const TrainingPyramid = () => {
       ]
     },
     {
-      title: "AI Infrastructure",
-      icon: Server,
-      level3: [
-        "Model Parameter Security",
-        "Training Data Filtering"
-      ]
-    },
-    {
-      title: "AI Systems",
+      title: "Technical AI Safety",
+      description: "For researchers, engineers, and ML practitioners",
       icon: Brain,
       level3: [
-        "AI Interpretability",
-        "AI Evaluations and Red-Teaming",
+        "AI interpretability",
+        "AI evaluations and red-teaming",
         "AI Alignment",
         "AI Control",
         "AI Robustness and Jailbreak Defence",
-        "Safe by Design AI Models",
+        "Safe by design AI models",
+        "Model Parameter Security",
+        "Training data filtering",
         "Machine Learning skills"
       ]
     },
     {
-      title: "AI Misuse Defences",
+      title: "Security & Resilience",
+      description: "For security professionals and resilience builders",
       icon: Users,
       level3: [
-        "Biodefence and Pandemic Preparedness",
-        "Cybersecurity for Critical National Infrastructure",
-        "Cognitive Security",
-        "Political Security: Hardening Democracy from AI Takeover"
+        "Biodefence and pandemic preparedness",
+        "Cybersecurity for critical national infrastructure",
+        "Cognitive security",
+        "Political Security: Hardening democracy from AI takeover"
       ]
     }
   ];
@@ -110,6 +101,7 @@ const TrainingPyramid = () => {
                         <course.icon className="w-8 h-8 text-blue-600" />
                       </div>
                       <h4 className="font-bold text-slate-900 text-lg mb-2">{course.title}</h4>
+                      <p className="text-sm text-slate-600 italic mb-3">{course.description}</p>
                       <span className="inline-block bg-blue-100 text-blue-800 text-xs font-semibold px-3 py-1 rounded-full">
                         Level 2 Course
                       </span>
