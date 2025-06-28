@@ -5,12 +5,14 @@ const WhatWeMustDo = () => {
   const actions = [
     {
       title: "Prevent the training of dangerous AI models",
+      description: "Prevent AI systems which threaten human civilisation from being built in the first place through compute controls, governance frameworks, and international cooperation. This defensive line focuses on tracking AI development globally, setting safety standards, and ensuring only beneficial AI systems are trained.",
       icon: Shield,
-      items: [
-        "Compute governance/nonproliferation",
-        "International cooperation and deterrence", 
-        "Agent foundations",
-        "Regulations, laws, corporate governance, licensing"
+      courses: [
+        "International AI governance",
+        "National AI governance",
+        "Compute governance",
+        "AI capability forecasting and early warning",
+        "Safe by design AI models"
       ],
       color: "from-emerald-50 to-green-50",
       borderColor: "border-emerald-100",
@@ -18,14 +20,14 @@ const WhatWeMustDo = () => {
     },
     {
       title: "Detect dangerous AI capabilities and actions",
+      description: "Build the technical and institutional infrastructure to identify dangerous AI capabilities before they cause harm. This includes developing evaluation methods, interpretability tools, and early warning systems to understand what AI systems can do and communicate risks to decision-makers.",
       icon: Search,
-      items: [
-        "Evaluations",
-        "Interpretability",
-        "Honeypots", 
-        "ELK",
-        "Incident reporting and disclosures",
-        "Whistleblower protections"
+      courses: [
+        "AI interpretability",
+        "AI evaluations and red-teaming",
+        "Risk communications",
+        "Compute governance",
+        "Incident response and whistleblower systems"
       ],
       color: "from-blue-50 to-indigo-50",
       borderColor: "border-blue-100",
@@ -33,11 +35,13 @@ const WhatWeMustDo = () => {
     },
     {
       title: "Constrain dangerous AI actions",
+      description: "Create multiple layers of protection to ensure AI systems cannot cause catastrophic harm, even if they're misaligned or compromised. This last line of defense includes alignment techniques, control mechanisms, security measures, and robustness against misuse.",
       icon: Lock,
-      items: [
-        "Cloud/data centre security",
-        "AI alignment for users, developers, and humanity",
-        "Robustness, output filtering, trust and safety"
+      courses: [
+        "AI alignment",
+        "AI control",
+        "Model parameter security",
+        "AI robustness and jailbreak defence"
       ],
       color: "from-purple-50 to-violet-50",
       borderColor: "border-purple-100",
@@ -45,41 +49,32 @@ const WhatWeMustDo = () => {
     },
     {
       title: "Withstand dangerous AI actions",
+      description: "Prepare society to survive and recover from AI-enabled attacks by building resilient defenses across all domains. This includes protecting against engineered pandemics, securing critical infrastructure from cyberattacks, defending democratic institutions from manipulation, and developing crisis response capabilities.",
       icon: Users,
-      items: [
-        "CBRN defence",
-        "CNI defence",
-        "Psychological defence"
+      courses: [
+        "Biodefence and pandemic preparedness",
+        "Cybersecurity for critical national infrastructure",
+        "Cognitive security",
+        "Political Security: Hardening democracy from AI takeover",
+        "Crisis response"
       ],
       color: "from-orange-50 to-amber-50",
       borderColor: "border-orange-100",
       iconBg: "bg-orange-600"
     },
     {
-      title: "Adapt to AGI",
+      title: "Adapt and thrive in the age of AGI",
+      description: "Navigate the profound societal transformation that AGI will bring while ensuring humanity flourishes. This involves reimagining economics and governance for a post-work world, preventing power concentration, and helping humanity find meaning and purpose when AI surpasses human capabilities.",
       icon: Globe,
-      items: [
-        "Economic system",
-        "Social contract",
-        "Democracy and power concentration",
-        "Global peace"
+      courses: [
+        "Managing the AGI transition",
+        "Reimagining governance and the social contract",
+        "Post-AGI economics and wealth distribution",
+        "Pursuing human flourishing"
       ],
       color: "from-teal-50 to-cyan-50",
       borderColor: "border-teal-100",
       iconBg: "bg-teal-600"
-    },
-    {
-      title: "Thrive in the age of AGI",
-      icon: Sparkles,
-      items: [
-        "Building a future where humanity flourishes alongside artificial general intelligence",
-        "Maximizing human potential and wellbeing",
-        "Preserving human agency and purpose",
-        "Creating abundant opportunities for growth"
-      ],
-      color: "from-yellow-50 to-amber-50",
-      borderColor: "border-yellow-100",
-      iconBg: "bg-yellow-600"
     }
   ];
 
@@ -95,23 +90,27 @@ const WhatWeMustDo = () => {
           </p>
         </div>
 
-        <div className="grid lg:grid-cols-2 xl:grid-cols-3 gap-8">
+        <div className="grid md:grid-cols-2 xl:grid-cols-3 gap-8">
           {actions.map((action, index) => (
             <div key={index} className={`bg-gradient-to-br ${action.color} rounded-2xl p-6 border ${action.borderColor} hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1`}>
-              <div className="flex items-start gap-4 mb-6">
+              <div className="flex items-start gap-4 mb-4">
                 <div className={`${action.iconBg} p-3 rounded-lg flex-shrink-0`}>
                   <action.icon className="w-6 h-6 text-white" />
                 </div>
                 <h3 className="text-xl font-bold text-slate-900 leading-tight">{action.title}</h3>
               </div>
-              <ul className="space-y-3">
-                {action.items.map((item, itemIndex) => (
-                  <li key={itemIndex} className="flex items-start gap-3">
-                    <div className="w-1.5 h-1.5 bg-slate-400 rounded-full mt-3 flex-shrink-0"></div>
-                    <span className="text-slate-700">{item}</span>
-                  </li>
-                ))}
-              </ul>
+              <p className="text-slate-600 mb-6 leading-relaxed">{action.description}</p>
+              <div className="mb-4">
+                <h4 className="text-sm font-semibold text-slate-800 mb-3 uppercase tracking-wide">Courses</h4>
+                <ul className="space-y-2">
+                  {action.courses.map((course, courseIndex) => (
+                    <li key={courseIndex} className="flex items-start gap-3">
+                      <div className="w-1.5 h-1.5 bg-slate-400 rounded-full mt-2 flex-shrink-0"></div>
+                      <span className="text-slate-700 text-sm">{course}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
             </div>
           ))}
         </div>
