@@ -7,68 +7,66 @@ const TrainingPyramid = () => {
       title: "AGI Strategy",
       icon: Shield,
       level3: [
-        "Risk Assessment & Threat Modeling",
-        "Safety Research Methodologies", 
-        "Coordination & International Cooperation",
-        "Policy Implementation Strategies"
+        "Geopolitics of AGI",
+        "AI capability forecasting and early warning",
+        "Leadership skills",
+        "The big questions"
       ]
     },
     {
       title: "AGI Futures",
       icon: Globe,
       level3: [
-        "Scenario Planning & Forecasting",
-        "Economic Impact Analysis",
-        "Social Transformation Studies",
-        "Long-term Governance Models"
+        "Managing the AGI transition",
+        "Reimagining governance and the social contract",
+        "Post-AGI economics and wealth distribution",
+        "Pursuing human flourishing"
       ]
     },
     {
       title: "AI Governance and Policy",
       icon: Settings,
       level3: [
-        "Regulatory Framework Design",
-        "International AI Treaties",
-        "Corporate Governance Standards",
+        "International AI governance",
+        "National AI governance",
+        "Compute governance",
+        "Corporate governance",
+        "Incident response and whistleblower systems",
+        "Crisis response",
+        "Risk communications",
+        "Advocacy skills",
+        "Public/policy/political engagement skills"
       ]
     },
     {
       title: "AI Infrastructure",
       icon: Server,
       level3: [
-        "Compute Security & Monitoring",
-        "Data Center Governance",
-        "Training Data"
+        "Model Parameter Security",
+        "Training data filtering"
       ]
     },
     {
-      title: "AI Models",
+      title: "AI Systems",
       icon: Brain,
       level3: [
-        "Interpretability Techniques",
-        "Safety Evaluations",
-        "Alignment Research",
-        "Control Mechanisms"
+        "AI interpretability",
+        "AI evaluations and red-teaming",
+        "AI Alignment",
+        "AI Control",
+        "AI Robustness and Jailbreak Defence",
+        "Safe by design AI models",
+        "Machine Learning"
       ]
     },
     {
       title: "AI Misuse Defences",
       icon: Users,
       level3: [
-        "CBRN Threat Detection",
-        "Critical Infrastructure Protection",
-        "Psychological Defense Systems",
-        "Information Security"
-      ]
-    },
-    {
-      title: "Skills",
-      icon: Wrench,
-      level3: [
-        "Machine Learning",
-        "Policy Writing",
-        "Technical Writing",
-        "Advocacy & Communication"
+        "Biodefence and pandemic preparedness",
+        "Cybersecurity for critical national infrastructure",
+        "Cognitive security",
+        "Political Security: Hardening democracy from AI takeover"
       ]
     }
   ];
@@ -130,7 +128,7 @@ const TrainingPyramid = () => {
                     </div>
                     <div className="space-y-3">
                       {course.level3.map((level3Course, level3Index) => (
-                        <div key={level3Index} className="group relative bg-gradient-to-r from-slate-50 to-blue-50 hover:from-blue-50 hover:to-indigo-50 border border-slate-200 hover:border-blue-300 rounded-lg p-3 transition-all duration-200 cursor-pointer hover:shadow-sm">
+                        <div key={level3Index} className="group relative bg-gradient-to-r from-slate-50 to-blue-50 hover:from-blue-50 hover:to-indigo-50 border border-slate-200 hover:border-blue-300 rounded-lg p-3 transition-all duration-200 hover:shadow-sm">
                           <div className="flex items-center gap-3">
                             <div className="flex-shrink-0">
                               <div className="w-6 h-6 bg-gradient-to-r from-blue-500 to-indigo-500 rounded-full flex items-center justify-center">
